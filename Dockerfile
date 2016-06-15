@@ -13,6 +13,6 @@ RUN apt-get update && \
      --allow-unauthenticated \
      clickhouse-server-common clickhouse-client
 
-ENTRYPOINT clickhouse-server 
+ENTRYPOINT ["clickhouse-server"]
 
 CMD ["--config-file", "/etc/clickhouse-server/config.xml"]
